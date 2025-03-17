@@ -1,0 +1,86 @@
+Learning journey 😊:
+1. component
+pada react terdapat sebuah component yang merupakan pecahan dari beberapa bagian sistem yang dipecah agar menjadi reusable dan dapat memenuhi dry code principle!
+-untuk membuat component di react dapat menggunakan function component atau class component
+-terdapat props untuk mengirimkan data serta terdapat props.children seperti slot pada vue!
+-gunakan distructuring untuk memecah data yang dikirimkan dengan menyimpannya ke dalam sebuah variable:
+    const { isi dari variable yang dikirim } = props;
+        ex: const {children, variable} = props;  -> menandakan bahwa terdapat children dan variable pada props!
+        full example:
+            const Button = (props) => {
+                const{children = 'uji coba', variant = 'bg-black'} = props;
+                return (
+                    <button
+                    className={`h-10 px-6 font-semibold rounded-md ${variant} text-white`}
+                    >
+                    {children}
+                    </button>
+                );
+            };
+
+
+2. atomic design
+Tujuan untuk membuat reuseable component dengan memastikan design dari component dinamis dan konsisten serta memenuhi drycode!
+membagi sebuah struktuk page menjadi beberapa componenet dengan susunan: 
+-page 
+kumpulan berisikan dari template dan fragment
+-templates
+berisikan template untuk design misalkan desgin untuk form, side bar , navba etc.
+-fragment/organisme
+berisikan komponen kumpulan dari component ataupun elemen seperti form etc.
+-component/element/molecules
+berisikan dari kumpulan element yang digunakan seperti tombol, label etc.
+
+3. Routing
+menggunan route-routing-dom dengan cara
+- npm install react-router-dom
+- import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+- createBrowserRouter untuk membuat path dan component, sedangkan Router Provider untuk render path dan component yang telah dibuat
+-terdapat path, element dan errorelemetn pada createBrowserRouter
+- untuk membuat error custom bisa memanggil plugin import { useRouteError } from "react-router-dom"; yang berisikan "error.statusText || error.message"
+
+
+4. conditional rendering 
+conditional rendering diguanakn untuk memanggil component yang diperlukan saja misalkan menggunakan if, ternary dan condition && ( jika berhasil)
+
+5. nested component
+jika kita membuat beberapa fuction dalam satu child kita dapat memanggilnya di parent seperti:
+Card.Header atau Card.Body dimana tetap memanggil component Card sedangkan 
+
+6. Rendering List
+dimana pada react kita dapat menggunakan map untuk mengrender list dengan cara:
+- const list = [...]; // list data
+- return list.map((item, index) => {
+    // return item
+    });
+untuk setiap list harus memiliki key untuk menjadi pembeda antar component yang di render!
+
+
+7. Event Handler
+event handler digunakan untuk meelukan interaksi pada button atau component! dapat dilakukan dengan:
+-onclick=(fuctionnya);
+-onSubmit=(fuctionya); ->untuk form
+untuk form button harus dibuat type submit dan default sebagai button saja
+
+8. Local Storage
+kita dapat meyimpan data di local storage browser kita dengan menggunakan fuction js yaitu local storage!
+
+9.state
+state terbafi menjadi statefull component dan stateless component
+-statefull componenent
+merupakan component class yang telah kita buat
+dapat dilihat pada fragment/Counter.jsx!
+-stateless component 
+merupakan component yang dibuat melalui fuction
+    1. 
+state umumnya hanya bisa pada statefull component sehingga untuk  stateless component kita dapat mengguanakan react hook!
+
+
+
+
+
+
+
+
+
+

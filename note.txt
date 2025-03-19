@@ -71,9 +71,15 @@ state terbafi menjadi statefull component dan stateless component
 merupakan component class yang telah kita buat
 dapat dilihat pada fragment/Counter.jsx!
 -stateless component 
-merupakan component yang dibuat melalui fuction
-    1. 
-state umumnya hanya bisa pada statefull component sehingga untuk  stateless component kita dapat mengguanakan react hook!
+merupakan component yang dibuat melalui fuction dimana kita menggunakan hooks dari react js
+    1. useState
+state umumnya hanya bisa pada statefull component sehingga untuk  stateless component kita dapat mengguanakan react hook! state ini bersifat local!
+    2. useEffect
+untuk melakukan mounting update seperti compute pada vue!
+    3. useRef
+untk menggunakan ref untuk mempermudah pembuatan state tanpa harus menggunakan usestate dimana memeliki variable dan set variable. dengan usetate dapat dibuat dan diedit secara langsung asalkan menggunakan .current pada akhiran variablenya! 
+useref juga dapat memanipulasi datanya dengan menggunakandom misalakan item.ccurrent.style.display = "css"
+
 
 
 

@@ -72,9 +72,14 @@ merupakan component class yang telah kita buat
 dapat dilihat pada fragment/Counter.jsx!
 -stateless component 
 merupakan component yang dibuat melalui fuction
-    1. 
 state umumnya hanya bisa pada statefull component sehingga untuk  stateless component kita dapat mengguanakan react hook!
 
+
+10. lifecycle
+merupakan siklus dari pembuatan(mounted), berjalan(updated) dan dihancurkan(unmounting)
+setelah itu terdapat fase render dan commit, dimana render dilaksanakan oleh react dan kita tidak memiliki akses. pada fase commit kita dapat mengakses dan mengubah state biasanya dilakukan dengan dom.
+-componentDidMount() untuk functionnya mountednya
+-componentDidUpdate(prevProps, prevState) untuk functionnya updatednya. hampir sama dengan watch di vue!
 
 
 

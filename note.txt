@@ -89,6 +89,19 @@ setelah itu terdapat fase render dan commit, dimana render dilaksanakan oleh rea
 -componentDidUpdate(prevProps, prevState) untuk functionnya updatednya. hampir sama dengan watch di vue!
 
 
+11. Redux
+redux adalah global state yang digunakan untuk menyimpan data secara global, dapat dilihat dengan redux.js
+
+12. redux toolkit
+merupakan library yang digunakan untuk mengatur state secara lebih mudah dan lebih baik dari pada redux
+    -reducer
+    menggunakan reducer dan action dengan membuat action dan reducer secara terpisah
+    -slicer
+    untuk mengatur state secara lebih mudah dan lebih baik dari pada reducer dan action dimana action dan reducer dibuat secara automatis dari slice!
+untuk mengguanakan di react install dulu react redux lalu gunakan usedispatch untuk dispacth dan useSelector((state) => state.cart.data);
+
+13 context
+merupakan management state yang diberikan oleh react dimana kita dapat membuat provider sendiri dan reducer sendiri dengan use reducer nantinya!
 
 
 jika tidak bisa jalan

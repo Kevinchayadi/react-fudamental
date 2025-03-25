@@ -12,3 +12,16 @@ export const getProducts = (callback) =>{
         console.log(err);
     })
 }
+
+export const getDetailProduct = (id, callback) =>{
+    axios.get('https://fakestoreapi.com/products/'+ id)
+    .then((res)=>{
+        if (callback) {
+            callback(res.data);
+        }
+
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+}
